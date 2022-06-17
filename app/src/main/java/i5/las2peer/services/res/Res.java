@@ -119,7 +119,7 @@ public class Res extends RESTService {
       JSONObject res = new JSONObject();
 
       res.put("name", "ABC"); 
-      //res.put("id", 1);
+      res.put("id", "1");
 
       return Response.status(HttpURLConnection.HTTP_OK).entity(res.toJSONString()).build();
     }
