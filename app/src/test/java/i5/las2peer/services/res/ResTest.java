@@ -134,7 +134,7 @@ public class ResTest {
       System.out.println("Result of request with id: 595906: " + result.getResponse().trim());
       Object response = JSONValue.parse(result.getResponse().trim());
       // Response body has type User
-      assertThat("[376070]", response, both(isA(JSONObject.class)).and(asJSONObject(followsSchema("User", """{"type":"object","properties":{"name":{"type":"string"},"id":{"format":"int32","type":"integer"}},"required":["name","id"]}"""))));
+      assertThat("[30590]", response, both(isA(JSONObject.class)).and(asJSONObject(followsSchema("User", """\n{"type":"object","properties":{"name":{"type":"string"},"id":{"format":"int32","type":"integer"}},"required":["name","id"]}"""))));
       
 
     } catch (Exception e) {
